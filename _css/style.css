@@ -1,0 +1,35 @@
+*{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.75rem;
+}
+body {
+    background-color: rgb(241, 225, 234);
+}
+#grid-container {
+    display: grid;
+    grid-template: auto 1fr auto / auto 1fr auto;
+    /*grid-template-areas: "header header header"
+    "aside aside aside"
+    "main main main"
+    "sidebar sidebar sidebar"
+    "footer footer footer";*/
+}
+.header {
+    grid-column: 1 / 4;
+    background-color: aqua;
+}
+.aside-left {
+    grid-column: 1 / 2;
+    background-color: blue;
+}
+.main {
+    grid-column: 2 / 3;
+    background-color: coral;
+}
+.sidebar-right {
+    grid-column: 3 / 4;
+    background-color: aqua;
+}
+.footer {
+    grid-column: 1 / 4;
+}
